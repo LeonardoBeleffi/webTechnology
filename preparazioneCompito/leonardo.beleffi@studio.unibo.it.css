@@ -7,8 +7,8 @@ body {
 header {
         background-image: linear-gradient(to bottom right, pink, yellow, pink, purple);
         width: 100%;
-        border-bottom: 2px solid purple;
-        padding: 3em 0;
+        border-bottom: 3px solid purple;
+        padding: 2em 0%;
         text-align: right;
         color: purple;
 }
@@ -18,22 +18,22 @@ nav {
         width: 15%;
         background-image: linear-gradient(to bottom right, pink, yellow, pink, purple);
         margin: 1em 0% 0% 1%;
-        padding: 0% 1% 0% 0%;
-        border-top: 2px solid purple;
-        border-bottom: 2px solid purple;
+        padding: 1em 1% 1em 0%;
+        border-top: 3px solid purple;
+        border-bottom: 3px solid purple;
 }
 
 section {
         float: right;
         width: 50%;
-        margin: 2em 1% 2em 0%;
+        margin: 2em 3% 2em 0%;
         padding: 0%;
 }
 
 aside {
         width: 20%;
         margin: 2em 0% 0% 17%;
-        padding: 0% 6%;
+        padding: 0% 5%;
         color: purple;
 }
 
@@ -66,8 +66,8 @@ nav ul li a:hover {
 footer {
         clear: both;
         background-image: linear-gradient(to top left, pink, yellow, pink, purple);
-        border-top: 2px solid purple;
-        padding: 2em 0;
+        border-top: 3px solid purple;
+        padding: 1em 0;
         width: 100%;
         text-align: center;
         color: purple;
