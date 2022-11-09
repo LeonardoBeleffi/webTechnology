@@ -25,14 +25,12 @@ nav {
 
 section {
         float: right;
-        background-color: red;
         width: 50%;
         margin: 2em 1% 2em 0%;
         padding: 0%;
 }
 
 aside {
-        background-color: red;
         width: 20%;
         margin: 2em 0% 0% 17%;
         padding: 0% 6%;
