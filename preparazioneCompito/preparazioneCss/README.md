@@ -1,6 +1,6 @@
 # Preparazione compito - Esercizio CSS
 
-### Dato il file ex_css.html, realizzare il file .css (esterno) così da ottenere il layout e lo stile riportati in css.png (browser: Chrome), tenendo in considerazione quanto segue:
+### Dato il file css.html, realizzare il file .css (esterno) così da ottenere il layout e lo stile riportati in css.png (browser: Chrome), tenendo in considerazione quanto segue:
 - Tutti i font devono avere la stessa font-family, che deve essere monospace. La dimensione deve essere del 100%. 
 - L’elemento di intestazione <header> ha come sfondo un gradiente che varia dai seguenti colori (in diagonale, dall’angolo in alto a sinistra all’angolo in basso a destra): rosa, giallo, rosa, viola. La sua larghezza è pari al 100%. Margin e padding devono essere simili a quelli riportati nello screenshot. Il bordo inferiore è di colore viola ed ha uno spessore simile a quello mostrato nello screenshot.
 - Il testo in <header> è di colore viola ed è allineato a destra.
