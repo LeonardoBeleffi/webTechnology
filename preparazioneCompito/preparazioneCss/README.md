@@ -16,3 +16,4 @@
 - Il testo in <footer> è di colore viola, è allineato al centro ed ha una dimensione pari all’80%.
 
 ## NB: NON È POSSIBILE APPORTARE MODIFICHE AL FILE HTML (ECCETTO OVVIAMENTE IL NOME DEL FILE CSS)!
+
