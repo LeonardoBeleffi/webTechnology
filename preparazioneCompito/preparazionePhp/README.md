@@ -9,9 +9,9 @@ In questa pagina, occorrerà:
 - Leggere tutti i numeri appartenenti a ciascun insieme (A e B) su database e inserirli in due vettori distinti.
 - Creare un nuovo vettore contenente l'unione dei due insiemi se O vale u, altrimenti dovrà contenere l'intersezione dei due insiemi.
 - Inserire sul db il nuovo insieme, usando come id dell'insieme il successivo all'id massimo.
-- Dovete supporre che il db esista (nome database: giugno; nome tabella: insiemi; username: root, pw: ''), che il demone mysql sia in ascolto sulla porta 3306 e che la tabella "insiemi" sia strutturata e riempita secondo le istruzioni che trovate nel file "db.txt".
+- Dovete supporre che il db esista (nome database: giugno; nome tabella: insiemi; username: root, pw: ''), che il demone mysql sia in ascolto sulla porta 3306 e che la tabella "insiemi" sia strutturata e riempita secondo le istruzioni che trovate nel file "db.sql".
 
-Esempi con i dati di esempio presenti nel file db.txt:
+Esempi con i dati di esempio presenti nel file db.sql:
 - Se A=1, B=2 e O=u i seguenti numeri dovranno essere inseriti all'interno del db (colonna valore): 19, 2, 14, 98, 1. Tutte queste righe avranno il valore 3 nella colonna insieme.
 - Se A=1, B=2 e O=i i seguenti numeri dovranno essere inseriti all'interno del db (colonna valore): 19. Questa riga avrà il valore 3 nella colonna insieme.
 
