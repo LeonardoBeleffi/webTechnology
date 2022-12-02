@@ -23,3 +23,11 @@ function generaArticoli(articoli){
     }
     return result;
 }
+
+console.log("Pagina pronta");
+axios.get("api-articolo.php").then(response => {
+    console.log(response);
+    const articoli = generaArticoli(response.data);
+    const main = document.querySelector("main");
+    main.innerHTML = articoli;
+})
