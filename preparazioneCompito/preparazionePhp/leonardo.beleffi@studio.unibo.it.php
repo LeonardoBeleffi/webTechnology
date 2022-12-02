@@ -2,8 +2,7 @@
 
 define("ERROR", "Errore Parametri");
 define("ERROR_DB", "Errore Database");
-define("DATABASE", "localhost");
-//define("DATABASE", "localhost:3306");
+define("DATABASE", "localhost:3306");
 define("USERNAME", "root");
 define("PASSWORD", "");
 define("DB_NAME", "giugno");
@@ -81,19 +80,14 @@ function getResult($query) {
 }
 
 function insertSet() {
-    global $db, $id, $set, $resultSet;
-    $status = false;
-    try {
-        $query = "";
-        foreach ($resultSet as $val) {
-            $query .= "INSERT INTO insiemi (id, valore, insieme) VALUES ('$id', '$val', '$set');";
-            $id++;
+    global $id, $set, $resultSet;
+    foreach ($resultSet as $val) {
+        if (false == getResult("INSERT INTO insiemi (id, valore, insieme) VALUES ($id, $val, $set);")) {
+            return false;
         }
-        echo $query;
-        $status = $db->query($query);
-    } finally {
-        return $status; 
+        $id++;
     }
+    return true;
 }
 
 ?>
