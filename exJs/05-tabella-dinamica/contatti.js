@@ -60,16 +60,23 @@ function displayAccessibleTable() {
 }
 
 function displayFullFledgedTable() {
+    let tableFields = Object.keys(datiTabella[0]);
     let table =
         `<table>
-            <tr>
-                <th id="autore">Autore</th><th id="email">Email</th><th id="argomenti">Argomenti</th>
-            </tr>`;
+            <tr>`;
+    tableFields.forEach(k => table += `<th id="${k.toLowerCase()}">${k}</th>`);
+    table += `</tr>`;
+
+    console.log(table);
     for (let i = 0; i < datiTabella.length; i++) {
-        let autore = datiTabella[i]["Autore"];
-        let email = datiTabella[i]["Email"];
-        let argomenti = datiTabella[i]["Argomenti"];
-        let id = email.split("@")[0];
+        let data = datiTabella[i];
+        let fields = {}; 
+
+        Object.keys(data).forEach(k => fields[k] = data[k]);
+        
+        if (!("Email" in fields))  return;
+
+        let id = fields["Email"].split("@")[0];
 
         table += `
                 <tr>
