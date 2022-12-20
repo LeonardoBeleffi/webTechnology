@@ -67,27 +67,26 @@ function displayFullFledgedTable() {
     tableFields.forEach(k => table += `<th id="${k.toLowerCase()}">${k}</th>`);
     table += `</tr>`;
 
-    console.log(table);
     for (let i = 0; i < datiTabella.length; i++) {
         let data = datiTabella[i];
-        let fields = {}; 
-
-        Object.keys(data).forEach(k => fields[k] = data[k]);
+        if (!("Email" in data)) return;
         
-        if (!("Email" in fields))  return;
-
-        let id = fields["Email"].split("@")[0];
-
         table += `
-                <tr>
-                    <th id="${id}">${autore}</th><td headers="email ${id}">${email}</td><td headers="argomenti ${id}">${argomenti}</td>
-                </tr>
-                `;
+                <tr>`;
+        Object.keys(data).forEach(k => {
+            let id = data["Email"].split("@")[0];
+            
+            table += Object.keys(data).indexOf(k) == 0 ?
+                    `<th id = "${id}">${data[k]}</th>` :
+                    `<td headers = "${k} ${id}">${data[k]}</td>`;
+        });
+        table += `
+                </tr>`;
     }
     table += `</table>`;
     section.innerHTML += table;
 }
 
-displayTable();
-displayAccessibleTable();
+// displayTable();
+// displayAccessibleTable();
 displayFullFledgedTable();
